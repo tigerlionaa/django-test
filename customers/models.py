@@ -90,3 +90,13 @@ class SubscriptionInfo(models.Model):
     # ordering models data based on contract initiated date of a customer
     class Meta:
         ordering = ['contract_initiated']
+
+
+
+
+# class Subscription(models.Model):
+#     subscriber = 
+#     subscriber_plan = 
+#     subscribed_company = 
+#     subscription_start_date = 
+#     subscription_end_date = 
