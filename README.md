@@ -7,17 +7,19 @@
 <b>Database:</b> SQLite <br>
 <b>Library:</b>  Django-Phonenumber-Field <br>
 
-# Overview
+# Project Overview
 
 * A RESTful API using Django REST Framework to track customers, their details, subscribed plan.
 * This App has multiple endpoints of `GET`, `POST`, `PUT`, `DELETE` http methods.
+* This Cutomers app has 2 layers of hierarchical user 
+                                    1. <b>Superuser/Admin</b>
+                                    2. <b>Customer/Subscriber under those superuser/admin</b>
 
-# Project Description
 
 ## API Endpoints
-* `users` can handle <b>GET</b> request method.
-* `users/id/` can handle <b>GET</b> request method.
-* `subscriptioninfo` can handle <b>GET</b>, and <b>POST</b> request methods.
+* `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
+* `users/id/` can handle `GET` request, we can view individual `superuser` and `customers` under the `superuser`.
+* `subscriptioninfo` can handle `GET`, and `POST` request methods. By `GET` request we can view all the `customers` and their `info` under a logged `superuser`. By 'POST` request a new `customer` with his/her related `info` will be created.
 * `subscriptioninfo/id/` can handle <b>GET</b>, <b>PUT</b> and <b>DELETE</b> request methods.
 
 * Anyone can Search in this site by putting anything related to post.
