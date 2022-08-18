@@ -19,7 +19,7 @@
 * With a unique `primary_phone_number` a customer can only subscribe to a plan at a time, customer can update the plan but can't hold membership of multiple paln.
 * If a customer subscribe to a paid plan (bronze, silver, gold), in that case customer will own the number.
 * If a customer subsribe to no paid plan, in that case the subscribed company will own the number.
-
+* We've included two 
 ## API Endpoints, their request methods & functionalities
 * `login` and `logout` endpoints are for superuser login and logout
 * `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
