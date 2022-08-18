@@ -44,3 +44,4 @@ And finally, create at least two superuser by hitting this command
 ```
 python manage.py createsuperuser
 ```
+# Quick Video Walkthough
