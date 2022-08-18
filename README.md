@@ -14,7 +14,11 @@
 * This Cutomers app has 2 layers of hierarchical user 
                                     1. <b>Superuser/Admin</b>
                                     2. <b>Customer/Subscriber under those superuser/admin</b>
-
+* A customer is recognized by his/her unique `primary_phone_number`, third party library has been utilized to validate the customer number.
+* Customer can't update or change the `primary_phone_number` once it's assigned to that customer.
+* With a unique `primary_phone_number` a customer can only subscribe to a plan at a time, customer can update the plan but can't hold membership of multiple paln.
+* If a customer subscribe to a paid plan (bronze, silver, gold), in that case customer will own the number.
+* If a customer subsribe to no paid plan, in that case the subscribed company will own the number.
 
 ## API Endpoints
 * `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
