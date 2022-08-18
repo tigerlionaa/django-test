@@ -20,7 +20,7 @@
 * If a customer subscribe to a paid plan (bronze, silver, gold), in that case customer will own the number.
 * If a customer subsribe to no paid plan, in that case the subscribed company will own the number.
 
-## API Endpoints
+## API Endpoints, their request methods & functionalities
 * `login` and `logout` endpoints are for superuser login and logout
 * `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
 * `users/id/` can handle `GET` request, we can view individual `superuser` and `customers` under the `superuser`.
@@ -28,3 +28,19 @@
 * `subscriptioninfo/id/` can handle `GET`, `PUT` and `DELETE` request methods. `GET` request will fetch a particular customer full info, `PUT` request will update the particular customer info, but customer can't update his `primary_phone_number`, `DELETE` request will delete the customer and customer's info from database.
 
 # How to Run the Project
+First, clone the project
+```
+git clone https://github.com/Jilanichy/django-pactical-test.git
+```
+Then, install the requirements file
+```
+pip install -r requirements.tx
+```
+Then, migrate the database
+```
+python manage.py makemigrations customers && python manage.py migrate
+```
+And finally, create at least two superuser by hitting this command
+```
+python manage.py createsuperuser
+```
