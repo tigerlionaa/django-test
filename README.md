@@ -21,17 +21,10 @@
 * If a customer subsribe to no paid plan, in that case the subscribed company will own the number.
 
 ## API Endpoints
+* `login` and `logout` endpoints are for superuser login and logout
 * `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
 * `users/id/` can handle `GET` request, we can view individual `superuser` and `customers` under the `superuser`.
 * `subscriptioninfo` can handle `GET`, and `POST` request methods. By `GET` request we can view all the `customers` and their `info` under a logged `superuser`. By 'POST` request a new `customer` with his/her related `info` will be created.
-* `subscriptioninfo/id/` can handle <b>GET</b>, <b>PUT</b> and <b>DELETE</b> request methods.
+* `subscriptioninfo/id/` can handle `GET`, `PUT` and `DELETE` request methods. `GET` request will fetch a particular customer full info, `PUT` request will update the particular customer info, but customer can't update his `primary_phone_number`, `DELETE` request will delete the customer and customer's info from database.
 
-* Anyone can Search in this site by putting anything related to post.
-
-* Viewers can comment on any post by providing their name and email.
-
-* Related posts will show up while inside of a post which will be filtered by topic name.
-
-* Quick Walkthrough - https://www.youtube.com/watch?v=5sywVg_tyQU
-
-* Deployed Link - https://featured-blog.herokuapp.com/
+# How to Run the Project
