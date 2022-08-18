@@ -19,7 +19,8 @@
 * With a unique `primary_phone_number` a customer can only subscribe to a plan at a time, customer can update the plan but can't hold membership of multiple paln.
 * If a customer subscribe to a paid plan (bronze, silver, gold), in that case customer will own the number.
 * If a customer subsribe to no paid plan, in that case the subscribed company will own the number.
-* We've included two 
+* Included a few tests to check different Http responses.
+
 ## API Endpoints, their request methods & functionalities
 * `login` and `logout` endpoints are for superuser login and logout
 * `users` can handle `GET` request, we can view all the `superusers` and `customers` under them.
@@ -44,4 +45,13 @@ And finally, create at least two superuser by hitting this command
 ```
 python manage.py createsuperuser
 ```
+Run the project by
+```
+python manage.py runserver
+```
+Run the Tests.py by
+```
+python manage.py test
+```
+
 # Quick Video Walkthough
