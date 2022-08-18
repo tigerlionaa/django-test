@@ -55,3 +55,4 @@ python manage.py test
 ```
 
 # Quick Video Walkthough
+https://drive.google.com/drive/folders/1Im6BM5gJ3EGzeCvbQjxv--XK71Ly8NYw?usp=sharing
